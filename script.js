@@ -12,8 +12,10 @@ const solarSystem = [
     { name: "Neptune", ringSystem: true, moons: ["Triton", "Nereid"] }
   ];
   // 1. Print the array of Jupiter's moons to the console (no for loop, just print the entire array).
-  
-  
+  console.log(solarSystem.filter(planet => planet.name === "Jupiter").map(planet => planet.moons)[0]);
+
+    // I used filter and map to get the moons of Jupiter. I used filter to get the object of Jupiter and then used map to get the moons of Jupiter. Expected output is ["Europa", "Ganymede", "Io", "Callisto"]
+    
   // 2. Print the name of Neptune's moon "Nereid" to the console.
   
   
