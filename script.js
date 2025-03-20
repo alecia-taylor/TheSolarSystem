@@ -29,10 +29,11 @@ const solarSystem = [
   
   // 4. Add a Pluto object to the solarSystem array using .push. The object should contain Pluto's name, ringSystem boolean, and moons array (which includes "Charon").
   solarSystem.push({ name: "Pluto", ringSystem: false, moons: ["Charon"] });
-
+   //I used the push methd to append the object of Pluto to the solarSystem array. Expected output is [{ name: "Pluto", ringSystem: false, moons: ["Charon"] }]
   
   // 5. Add a new key-value pair to the the Earth object: the key should be 'diameter', and the value should be Earth's diameter in miles represented as a string.
-  
+  solarSystem.find(planet => planet.name === "Earth").diameter = "7917.5 miles";
+    // I used find to locate Earth and assigned a new property called diameter with the value of Earth's diameter in miles. 
   
   // 6. Change Mercury's ringSystem boolean to true.
   
