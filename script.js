@@ -36,12 +36,17 @@ const solarSystem = [
     // I used find to locate Earth and assigned a new property called diameter with the value of Earth's diameter in miles. 
   
   // 6. Change Mercury's ringSystem boolean to true.
-  
+  solarSystem.find(planet => planet.name === "Mercury").ringSystem = true;
+   //Used find to locate Mercury and then changed the value of ringSystem to true.
   
   // 7. Change Uranus' moon "Umbriel" to "Oberon"
-  
+  solarSystem.find(planet => /Uranus/.test(planet.name)).moons = 
+  solarSystem.find(planet => /Uranus/.test(planet.name)).moons.map(moon => moon === "Umbriel" ? "Oberon" : moon);
+   //I used regex to find Uranus and then used map to make a copy of the moons array and changed the value of "Umbriel" to "Oberon".
   
   // 8. Iterate through the solarSystem array and print only the objects that have a ringSystem (where ringSystem: true), and ignore the others.
+  
+
   //////////////////////////////
   // The Solar System, Part 2 //
   //////////////////////////////
@@ -201,7 +206,7 @@ const solarSystem = [
   // 3. Console.log the sum of the number of satellites of Jupiter, Saturn, Uranus, and Neptune (131)
   
   
-  // 4. Write a conditional that checks if Mercury's radiusp is a string (remember the typeof command). If Mercury's radiusp is a string, change the value to be the same as its radiuse value. (radiusp is radius at the poles, radiuse is radius at the equator).
+  // 4. Write a conditional that checks if Mercury's radiusp is a string (remember the type of command). If Mercury's radiusp is a string, change the value to be the same as its radiuse value. (radiusp is radius at the poles, radiuse is radius at the equator).
   
   
   // 5. Console.log Mercury's radiusp (should be 2439, not 'same').
