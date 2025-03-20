@@ -14,15 +14,18 @@ const solarSystem = [
   // 1. Print the array of Jupiter's moons to the console (no for loop, just print the entire array).
   console.log(solarSystem.filter(planet => planet.name === "Jupiter").map(planet => planet.moons)[0]);
 
-    // I used filter and map to get the moons of Jupiter. I used filter to get the object of Jupiter and then used map to get the moons of Jupiter. Expected output is ["Europa", "Ganymede", "Io", "Callisto"]
+   // I used filter and map to get the moons of Jupiter. I used filter to get the object of Jupiter and then used map to get the moons of Jupiter. Expected output is ["Europa", "Ganymede", "Io", "Callisto"]
 
   // 2. Print the name of Neptune's moon "Nereid" to the console.
   console.log(solarSystem.find(planet => planet.name === "Neptune").moons[1]);
 
-  // I used find to get the object of Neptune and then used index to get the second moon of Neptune. Expected output is "Nereid"
-  
+   // I used find to get the object of Neptune and then used index to get the second moon of Neptune. Expected output is "Nereid"
+
   // 3. Add a new moon called "Endor" to Venus' moons array.
-  
+  solarSystem.find(planet => planet.name === "Venus").moons.push("Endor");
+  console.log(solarSystem.find(planet => planet.name === "Venus").moons);
+   
+   // I used find to get the object of Venus and then used push to add a new moon, "Endor" to Venus. 
   
   // 4. Add a Pluto object to the solarSystem array using .push. The object should contain Pluto's name, ringSystem boolean, and moons array (which includes "Charon").
   
