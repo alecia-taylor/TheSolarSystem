@@ -19,6 +19,7 @@ const solarSystem = [
   // 2. Print the name of Neptune's moon "Nereid" to the console.
   console.log(solarSystem.find(planet => planet.name === "Neptune").moons[1]);
 
+  // I used find to get the object of Neptune and then used index to get the second moon of Neptune. Expected output is "Nereid"
   
   // 3. Add a new moon called "Endor" to Venus' moons array.
   
