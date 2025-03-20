@@ -15,9 +15,10 @@ const solarSystem = [
   console.log(solarSystem.filter(planet => planet.name === "Jupiter").map(planet => planet.moons)[0]);
 
     // I used filter and map to get the moons of Jupiter. I used filter to get the object of Jupiter and then used map to get the moons of Jupiter. Expected output is ["Europa", "Ganymede", "Io", "Callisto"]
-    
+
   // 2. Print the name of Neptune's moon "Nereid" to the console.
-  
+  console.log(solarSystem.find(planet => planet.name === "Neptune").moons[1]);
+
   
   // 3. Add a new moon called "Endor" to Venus' moons array.
   
