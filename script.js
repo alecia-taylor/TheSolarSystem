@@ -45,7 +45,8 @@ const solarSystem = [
    //I used regex to find Uranus and then used map to make a copy of the moons array and changed the value of "Umbriel" to "Oberon".
   
   // 8. Iterate through the solarSystem array and print only the objects that have a ringSystem (where ringSystem: true), and ignore the others.
-  
+  solarSystem.filter(planet => planet.ringSystem).forEach(planet => console.log(planet));
+    //I used filter to get the objects with ringSystem as true and then used forEach to print the objects. 
 
   //////////////////////////////
   // The Solar System, Part 2 //
@@ -198,7 +199,8 @@ const solarSystem = [
   };
   
   // 1. Console.log the mass of Mercury
-  
+  console.log(system.mercury.mass);
+    //I used dot notation to get the mass of Mercury. Expected output is 0.06
   
   // 2. Console.log the eccentricity of Venus
   
