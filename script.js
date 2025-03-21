@@ -203,10 +203,13 @@ const solarSystem = [
     //I used dot notation to get the mass of Mercury. Expected output is 0.06
   
   // 2. Console.log the eccentricity of Venus
-  
+  console.log(system.venus.eccentricity);
+    //I used dot notation to get the eccentricity of Venus. Expected output is 0.007
   
   // 3. Console.log the sum of the number of satellites of Jupiter, Saturn, Uranus, and Neptune (131)
-  
+   console.log(parseInt(system.jupiter.satellites) + system.saturn.satellites + system.uranus.satellites + system.neptune.satellites);
+   console.log(system.mercury.mass);
+    //I used parseInt to convert the string to integer and then added the number of satellites of Jupiter, Saturn, Uranus, and Neptune. Expected output is 131
   
   // 4. Write a conditional that checks if Mercury's radiusp is a string (remember the type of command). If Mercury's radiusp is a string, change the value to be the same as its radiuse value. (radiusp is radius at the poles, radiuse is radius at the equator).
   
