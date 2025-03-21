@@ -220,3 +220,8 @@ const solarSystem = [
    console.log(system.mercury.radiusp);
 
   // 6. Find the difference between Jupiter's momentum and Pluto's momentum. (To get momentum, you'll want the product of velocity and mass).
+  const { velocity: jVel, mass: jMass } = system.jupiter;
+  const { velocity: pVel, mass: pMass } = system.pluto;
+  const momentumDifference = jVel * jMass - pVel * pMass;
+  console.log(`Momentum Difference: ${momentumDifference}`);
+    //I used destructuring to get the velocity and mass of Jupiter and Pluto and then calculated the momentum difference. Expected output is 317.89 * 13.06 - 0.002 * 4.74 = 4137.15794
