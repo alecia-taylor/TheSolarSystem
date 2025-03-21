@@ -211,11 +211,12 @@ const solarSystem = [
    console.log(system.mercury.mass);
     //I used parseInt to convert the string to integer and then added the number of satellites of Jupiter, Saturn, Uranus, and Neptune. Expected output is 131
   
-  // 4. Write a conditional that checks if Mercury's radiusp is a string (remember the type of command). If Mercury's radiusp is a string, change the value to be the same as its radiuse value. (radiusp is radius at the poles, radiuse is radius at the equator).
+  // 4. Write a conditional that checks if Mercury's radius is a string (remember the type of command). If Mercury's radiusp is a string, change the value to be the same as its radiuse value. (radiusp is radius at the poles, radiuse is radius at the equator).
    if (typeof system.mercury.radiusp === "string") {
      system.mercury.radiusp = system.mercury.radiuse;
+     //I used regex to check if radiusp is a string and then changed the value of radiusp to radiuse
 }
   // 5. Console.log Mercury's radiusp (should be 2439, not 'same').
-  
-  
+   console.log(system.mercury.radiusp);
+
   // 6. Find the difference between Jupiter's momentum and Pluto's momentum. (To get momentum, you'll want the product of velocity and mass).
