@@ -1,5 +1,4 @@
 # TheSolarSystem
-# TheSolarSystem
 TheSolarSystem project! This repository aims to provide an interactive and educational representation of our solar system, allowing users to explore and learn about the celestial bodies that comprise it.
 
 ## Features
